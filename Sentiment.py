@@ -55,7 +55,7 @@ stop_words = stop_words = set(stopwords.words('english'))
 classifier = pipeline("sentiment-analysis", model="distilbert/distilbert-base-uncased-finetuned-sst-2-english")
 
 import pandas as pd
-df = pd.read_excel("/content/SnowWhite Comments.xlsx")
+df = pd.read_excel("Snowhite.xlsx")
 
 comments = []
 comments = df['Comments'].tolist()
